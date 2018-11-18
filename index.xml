@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>phuctk93 - Full stack Developer, Desiner for web, app and game.</title>
+    <link>https://phuctk93.github.io/</link>
+    <description>Recent content on phuctk93 - Full stack Developer, Desiner for web, app and game.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Nov 2018 15:00:18 +0700</lastBuildDate>
+    
+	<atom:link href="https://phuctk93.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anino</title>
+      <link>https://phuctk93.github.io/projects/anino/</link>
+      <pubDate>Sun, 18 Nov 2018 21:47:54 +0700</pubDate>
+      
+      <guid>https://phuctk93.github.io/projects/anino/</guid>
+      <description> Anino - Simple and fast forum board </description>
+    </item>
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://phuctk93.github.io/blog/helloworld/</link>
+      <pubDate>Sun, 18 Nov 2018 17:18:53 +0700</pubDate>
+      
+      <guid>https://phuctk93.github.io/blog/helloworld/</guid>
+      <description>Hi Say hi and good luck!</description>
+    </item>
+    
+    <item>
+      <title>9games</title>
+      <link>https://phuctk93.github.io/projects/9games/</link>
+      <pubDate>Sun, 18 Nov 2018 10:56:37 +0700</pubDate>
+      
+      <guid>https://phuctk93.github.io/projects/9games/</guid>
+      <description> 9games - Nice games for you </description>
+    </item>
+    
+  </channel>
+</rss>
