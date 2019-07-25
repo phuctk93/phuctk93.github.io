@@ -7,7 +7,7 @@ prepareSVG(p2);
 
 TweenLite.to(p1, 3, {strokeDashoffset: 0});
 TweenLite.to(p2, 1, {strokeDashoffset: 0});
-TweenLite.to(title, 3, {scale: 1.5, ease: Bounce.easeOut});
+TweenLite.fromTo(title, 3, {y: -50}, {y: 0, ease: Bounce.easeOut});
 
 function prepareSVG(el) {
 	var l = el.getTotalLength();
