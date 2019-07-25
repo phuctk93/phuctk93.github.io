@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html><head>
-	<meta name="generator" content="Hugo 0.51" />
+<html lang="en-US"><head>
+	<meta name="generator" content="Hugo 0.52" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="description" content='I am a web &amp; game developer. My knowledge is: HTML, CSS, Javascript (Pure JS, VueJS), TypeScript, Golang, C# (Unity), Python, C&#43;&#43;. I can also designer: 3d model, logo, banner,… with free and open source tool like GIMP, GravitDesigner.' />
+	<meta name="Description" content='I am a web &amp; game developer. My knowledge is: HTML, CSS, Javascript (Pure JS, VueJS), TypeScript, Golang, C# (Unity), Python, C&#43;&#43;. I can also designer: 3d model, logo, banner,… with free and open source tool like Blender, GIMP, GravitDesigner.' />
 	<meta name="author" content="">
-	<link rel="icon" href="https://phuctk93.github.iofavicon.ico">
+	<link rel="icon" href="/img/logo_p.svg">
 	<link rel="canonical" href="https://phuctk93.github.io/">
 	<title>phuctk93 - Full stack Developer, Desiner for web, app and game.</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-</head><body class="has-navbar-fixed-top"><header class="head">
-	<nav class="navbar is-fixed-top is-dark">
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head><body class="has-navbar-fixed-top"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<header class="head">
+	<nav class="navbar is-fixed-top is-info">
 		<div class="container">
 			<div class="navbar-brand">
 				<a href="/" class="navbar-item">
-					<b>phuctk93</b>
+					<img alt="phuctk93 logo" src="/img/logo_p.svg"/>
 				</a>
 				<span class="navbar-burger burger" data-target="navbarMenuHeroB">
 					<span></span>
@@ -31,46 +35,103 @@
 					<a class="navbar-item" href="/projects/" title="Projects section">Projects</a>
 					
 					<span class="navbar-item">
-						<a class="button is-info is-inverted">
+						<a class="button is-danger">
 							<span class="icon">
-								<i class="fab fa-github"></i>
+								<i class="fas fa-address-card"></i>
 							</span>
-							<span>Download</span>
+							<span>Contact</span>
 						</a>
 					</span>
 				</div>
 			</div>
 		</div>
 	</nav>
+	<script>
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		
+		if ($navbarBurgers.length > 0) {
+		
+			
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+				
+					
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+				
+					
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+				
+				});
+			});
+		}
+	</script>
 </header><div id="content">
-<section id="hi" class="hero is-dark is-fullheight">
+<section id="hi" class="hero is-info is-fullheight">
   <div class="hero-body">
     <div class="container has-text-centered">
-			<figure class="image is-128x128" style="margin: auto">
-				<img class="is-rounded" src="https://lh3.googleusercontent.com/-GnT6bfoW5K8/AAAAAAAAAAI/AAAAAAAACI8/ZovTJDEaheE/s120-p-rw-no/photo.jpg" />
-			</figure>
 			<div id="main" class="content">
-				
+				<div class="columns">
+    <div class="column">
+        <div class="title" id="title">I'm phuctk93</div>
+        <div class="is-size-4 has-text-justified">
+        <p>A <b>cross-platform developer</b> for app, web and game with: JavaSript (Vue, TensorflowJS - AI, Pixi, Babylon), CSS (Bulma, Boostrap), HTML (XML, SVG), Golang, C# (Unity - 2D and 3D game engine). </p>
+        <p>I'm also <b>designer</b> with open source tools: GIMP, Gravit Designer, Blender. </p>
+        <p>
+            <a class="button is-dark is-medium" href="#blog">
+                <span class="icon">
+                    <i class="fas fa-book-open"></i>
+                </span>
+                <span>Blog</span>
+            </a>
+            <a class="button is-success is-medium" href="#projects">
+                <span class="icon">
+                    <i class="fas fa-tasks"></i>
+                </span>
+                <span>Project</span>
+            </a>
+            <a class="button is-danger is-medium" href="#contact">
+                <span class="icon">
+                    <i class="fas fa-address-card"></i>
+                </span>
+                <span>Contact</span>
+            </a>
+        </p>
+        </div>
+    </div>
+    <div class="column">
+        <svg height="310px" width="210px"><path id="p1" d="m 15.119057,143.16367 c -3e-6,-53.231373 40.614165,-96.383929 90.714283,-96.383931 50.10012,-2e-6 90.71429,43.152555 90.71429,96.383931 0,53.23137 -40.61417,96.38392 -90.71429,96.38392 -50.100114,0 -90.71428,-43.15255 -90.714283,-96.38392 v 150.81252" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path id="p2" d="m 160.2619,145.43155 c 0,22.01118 -10.37403,42.35034 -27.21429,53.35593 -16.84026,11.00559 -37.58831,11.00559 -54.428568,0 C 61.778784,187.78189 51.404757,167.44273 51.404758,145.43155" style="fill:none;stroke:#fff;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:180;stroke-dashoffset:180;stroke-opacity:1"></path></svg>
+    </div>
+</div>
 
-<h2 id="hi">Hi!</h2>
+<script>
+    const p1 = document.getElementById('p1'),
+    p2 = document.getElementById('p2'),
+    title = document.getElementById('title');
 
-<p>My name: <a href="/">phuctk93</a></p>
+    prepareSVG(p1);
+    prepareSVG(p2);
 
-<p>I&rsquo;m a full stack <strong>developer</strong> for web and game with: JS, CSS, HTML, Golang, C#.</p>
-
-<p>I&rsquo;m also <strong>designer</strong> with open source tools: GIMP, Gravit Designer, Blender.</p>
+    TweenLite.to(p1, 5, {strokeDashoffset: 0});
+    TweenLite.to(p2, 2, {strokeDashoffset: 0});
+    TweenLite.to(title, 5, {scale: 2, ease: Bounce.easeOut});
+    
+    function prepareSVG(el) {
+        var l = el.getTotalLength();
+        el.style.strokeDasharray = l;
+        el.style.strokeDashoffset = l;
+    }
+</script>
 
 			</div>
-			<br>
-			<p id="action">
-				<a href="#contact" class="button is-medium is-info">Contact</a>
-			</p>
     </div>
   </div>
 </section>
 
-<section id="blog" class="section">
-		<h3 class="title">BLOG</h3>
+<section id="blog" class="section has-text-centered">
+		<h2 class="title is-size-2">BLOG</h2>
 		<div class="container">
 			<div class="columns is-multiline">
 					
@@ -78,7 +139,7 @@
 							<div class="card">
 								<div class="card-image">
 									<figure class="image is-4by3">
-										<img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
+										<img src="" alt="Placeholder image">
 									</figure>
 								</div>
 								<div class="card-content">
@@ -95,10 +156,36 @@
 		</div>
 	</section>
 
-<section id="projects" class="section">
-		<h3 class="title">PROJECTS</h3>
+<section id="projects" class="section has-text-centered">
+		<h2 class="title is-size-2">PROJECTS</h2>
 		<div class="container">
 			<div class="columns is-multiline">
+					
+					<a href="https://phuctk93.github.io/projects/bushiroad/" class="column is-4">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h3 class="title">Bushiroad</h3>
+								</div>
+							</div>
+					</a>
+					
+					<a href="https://phuctk93.github.io/projects/diennuoctainha/" class="column is-4">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h3 class="title">Diennuoctainha</h3>
+								</div>
+							</div>
+					</a>
 					
 					<a href="https://phuctk93.github.io/projects/anino/" class="column is-4">
 							<div class="card">
@@ -109,6 +196,19 @@
 								</div>
 								<div class="card-content">
 									<h3 class="title">Anino</h3>
+								</div>
+							</div>
+					</a>
+					
+					<a href="https://phuctk93.github.io/projects/nhacuapet/" class="column is-4">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h3 class="title">Nhacuapet</h3>
 								</div>
 							</div>
 					</a>
@@ -134,45 +234,79 @@
 		</div>
 	</section>
 
-<section id="contact" class="hero is-dark is-medium">
-	<div class="hero-body">
-		<h2 class="is-size-2">CONTACT</h2>
-		<div class="columns container">
-			<div class="column">
+<section id="contact" class="hero is-light is-medium">
+	<div class="hero-body has-text-centered">
+		<h2 class="title is-size-2">CONTACT</h2>
+		<div class="columns is-multiline">
+			<a href="mailto:phuctk93@gmail.com" class="column has-text-danger is-12-mobile is-6-table is-4-desktop">
+				<i class="fas fa-envelope fa-3x"></i>
 				<h3 class="is-size-3">
 					Email
 				</h3>
-				<a href="mailto:phuctk93@gmail.com" class="sub-title" target="_blank">
-						phuctk93@gmail.com
-				</a>
-			</div>
-			<div class="column">
+				<p target="_blank">
+					phuctk93@gmail.com
+				</p>
+			</a>
+			<a href="https://phuctk93.github.io" class="column has-text-dark is-12-mobile is-6-table is-4-desktop">
+				<i class="fab fa-github fa-3x"></i>
 				<h3 class="is-size-3">
 					Github
 				</h3>
-				<a href="https://phuctk93.github.io" class="sub-title" target="_blank">
-						https://phuctk93.github.io
-				</a>
-			</div>
-			<div class="column">
+				<p target="_blank">
+					https://phuctk93.github.io
+				</p>
+			</a>
+			<a href="https://fb.me/phuctk93" class="column has-text-link is-12-mobile is-6-table is-4-desktop">
+				<i class="fab fa-facebook fa-3x"></i>
 				<h3 class="is-size-3">
 					Facebook
 				</h3>
-				<a href="https://fb.me/phuctk93" class="sub-title">
-						https://fb.me/phuctk93
-				</a>
-			</div>
+				<p>
+					https://fb.me/phuctk93
+				</p>
+			</a>
+			<a href="https://www.linkedin.com/in/bphuc/" class="column has-text-link">
+				<i class="fab fa-linkedin fa-3x"></i>
+				<h3 class="is-size-3">
+					Linkedin
+				</h3>
+				<p>
+					https://www.linkedin.com/in/bphuc/
+				</p>
+			</a>
+			<a href="https://twitter/bphuc" class="column has-text-info">
+				<i class="fab fa-twitter fa-3x"></i>
+				<h3 class="is-size-3">
+					Twitter
+				</h3>
+				<p>
+					https://twitter/bphuc
+				</p>
+			</a>
+			<a href="https://youtube.com/bphuc93" class="column has-text-danger">
+				<i class="fab fa-youtube fa-3x"></i>
+				<h3 class="is-size-3">
+					Youtube
+				</h3>
+				<p>
+					https://youtube.com/bphuc93
+				</p>
+			</a>
 		</div>
 	</div>
 </section>
 
-        </div><footer class="footer">
+        </div><footer class="footer" style="background: #333; color: #fff">
   <div class="content has-text-centered">
-    <p>
-      <strong>Pico CV</strong> by <a href="https://phuctk93.github.io">phuctk93</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-    </p>
+    <p><b>Pico CV</b> by <a href="https://phuctk93.github.io">phuctk93</a></p>
+    <p>Build with <a href="https://bulma.io"><b>Bulma</b></a></p>
   </div>
 </footer></body>
+    <script lang="javascript">
+        window.scroll(
+            {
+                behavior: "smooth"
+            }
+        )
+    </script>
 </html>

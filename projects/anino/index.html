@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en-US"><head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="description" content='Anino - Simple and fast forum board software with golang, vuejs and postgresql.' />
+	<meta name="Description" content='Anino - Simple and fast forum board software with golang, vuejs and postgresql.' />
 	<meta name="author" content="">
-	<link rel="icon" href="https://phuctk93.github.iofavicon.ico">
+	<link rel="icon" href="/img/logo_p.svg">
 	<link rel="canonical" href="https://phuctk93.github.io/projects/anino/">
 	<title>Anino</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-</head><body class="has-navbar-fixed-top"><header class="head">
-	<nav class="navbar is-fixed-top is-dark">
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head><body class="has-navbar-fixed-top"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<header class="head">
+	<nav class="navbar is-fixed-top is-info">
 		<div class="container">
 			<div class="navbar-brand">
 				<a href="/" class="navbar-item">
-					<b>phuctk93</b>
+					<img alt="phuctk93 logo" src="/img/logo_p.svg"/>
 				</a>
 				<span class="navbar-burger burger" data-target="navbarMenuHeroB">
 					<span></span>
@@ -30,17 +34,39 @@
 					<a class="navbar-item" href="/projects/" title="Projects section">Projects</a>
 					
 					<span class="navbar-item">
-						<a class="button is-info is-inverted">
+						<a class="button is-danger">
 							<span class="icon">
-								<i class="fab fa-github"></i>
+								<i class="fas fa-address-card"></i>
 							</span>
-							<span>Download</span>
+							<span>Contact</span>
 						</a>
 					</span>
 				</div>
 			</div>
 		</div>
 	</nav>
+	<script>
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		
+		if ($navbarBurgers.length > 0) {
+		
+			
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+				
+					
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+				
+					
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+				
+				});
+			});
+		}
+	</script>
 </header><div id="content">
 <section class="section"><nav class="breadcrumb" aria-label="breadcrumbs">
 	<ul>
@@ -62,19 +88,25 @@
 	</div>
 	<nav class="pagination is-rounded" role="navigation" aria-label="pagination">
 		
-		<a href="https://phuctk93.github.io/projects/9games/" class="pagination-previous" title="9games">&lt; 9games</a>
+		<a href="https://phuctk93.github.io/projects/nhacuapet/" class="pagination-previous" title="Nhacuapet">&lt; Nhacuapet</a>
 		
+		
+		<a href="https://phuctk93.github.io/projects/diennuoctainha/" class="pagination-next" title="Diennuoctainha">Diennuoctainha &gt;</a>
 		
 	</nav>
 </section>
 
-        </div><footer class="footer">
+        </div><footer class="footer" style="background: #333; color: #fff">
   <div class="content has-text-centered">
-    <p>
-      <strong>Pico CV</strong> by <a href="https://phuctk93.github.io">phuctk93</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-    </p>
+    <p><b>Pico CV</b> by <a href="https://phuctk93.github.io">phuctk93</a></p>
+    <p>Build with <a href="https://bulma.io"><b>Bulma</b></a></p>
   </div>
 </footer></body>
+    <script lang="javascript">
+        window.scroll(
+            {
+                behavior: "smooth"
+            }
+        )
+    </script>
 </html>
