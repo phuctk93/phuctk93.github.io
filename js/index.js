@@ -5,9 +5,9 @@ title = document.getElementById("title");
 prepareSVG(p1);
 prepareSVG(p2);
 
-TweenLite.to(p1, 5, {strokeDashoffset: 0});
-TweenLite.to(p2, 2, {strokeDashoffset: 0});
-TweenLite.to(title, 5, {scale: 2, ease: Bounce.easeOut});
+TweenLite.to(p1, 3, {strokeDashoffset: 0});
+TweenLite.to(p2, 1, {strokeDashoffset: 0});
+TweenLite.to(title, 3, {scale: 1.5, ease: Bounce.easeOut});
 
 function prepareSVG(el) {
 	var l = el.getTotalLength();
