@@ -3,13 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://phuctk93.github.io/projects/canvas/</loc>
+    <lastmod>2019-07-25T10:23:54+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phuctk93.github.io/projects/bushiroad/</loc>
     <lastmod>2019-03-01T11:35:32+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://phuctk93.github.io/projects/diennuoctainha/</loc>
-    <lastmod>2018-11-18T21:48:19+07:00</lastmod>
+    <loc>https://phuctk93.github.io/projects/que/</loc>
+    <lastmod>2019-02-18T21:48:56+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/projects/pipi-ghost/</loc>
+    <lastmod>2019-01-18T21:48:56+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/projects/nhacuapet/</loc>
+    <lastmod>2019-01-18T21:47:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/projects/saokim247/</loc>
+    <lastmod>2018-11-18T21:48:29+07:00</lastmod>
   </url>
   
   <url>
@@ -28,11 +48,6 @@
   </url>
   
   <url>
-    <loc>https://phuctk93.github.io/projects/nhacuapet/</loc>
-    <lastmod>2018-11-18T21:47:41+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://phuctk93.github.io/blog/helloworld/</loc>
     <lastmod>2018-11-18T17:18:53+07:00</lastmod>
   </url>
@@ -48,13 +63,42 @@
   </url>
   
   <url>
+    <loc>https://phuctk93.github.io/projects/diennuoctainha/</loc>
+    <lastmod>2017-11-18T21:48:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/android/</loc>
+    <lastmod>2019-02-18T21:48:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phuctk93.github.io/tags/blogging/</loc>
     <lastmod>2018-11-18T17:18:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://phuctk93.github.io/tags/bushiroad/</loc>
+    <lastmod>2019-03-01T11:35:32+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/canvas/</loc>
+    <lastmod>2019-07-25T10:23:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phuctk93.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/design/</loc>
+    <lastmod>2018-11-18T21:48:29+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -65,8 +109,26 @@
   </url>
   
   <url>
+    <loc>https://phuctk93.github.io/tags/diennuoctainha/</loc>
+    <lastmod>2018-11-18T21:48:29+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phuctk93.github.io/tags/fast/</loc>
     <lastmod>2018-11-18T17:18:53+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/game/</loc>
+    <lastmod>2019-03-01T11:35:32+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/ghost/</loc>
+    <lastmod>2019-01-18T21:48:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -77,8 +139,86 @@
   </url>
   
   <url>
+    <loc>https://phuctk93.github.io/tags/nhacuapet/</loc>
+    <lastmod>2019-01-18T21:47:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/phaser/</loc>
+    <lastmod>2019-03-01T11:35:32+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/pipi-ghost/</loc>
+    <lastmod>2019-01-18T21:48:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/pixijs/</loc>
+    <lastmod>2019-02-18T21:48:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/project/</loc>
+    <lastmod>2019-03-01T11:35:32+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/projects/</loc>
+    <lastmod>2018-11-18T21:48:29+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/pwa/</loc>
+    <lastmod>2019-07-25T10:23:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/que/</loc>
+    <lastmod>2019-02-18T21:48:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/saokim247/</loc>
+    <lastmod>2018-11-18T21:48:29+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phuctk93.github.io/tags/</loc>
-    <lastmod>2018-11-18T17:18:53+07:00</lastmod>
+    <lastmod>2019-02-18T21:48:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/vuejs/</loc>
+    <lastmod>2019-07-25T10:23:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/web/</loc>
+    <lastmod>2019-02-18T21:48:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/website/</loc>
+    <lastmod>2019-07-25T10:23:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phuctk93.github.io/tags/wordpress/</loc>
+    <lastmod>2019-01-18T21:47:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
