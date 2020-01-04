@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Simple 3D Shelf</title>
+      <link>https://phuctk93.github.io/projects/3d-shelf/</link>
+      <pubDate>Sun, 05 Jan 2020 01:31:49 +0700</pubDate>
+      
+      <guid>https://phuctk93.github.io/projects/3d-shelf/</guid>
+      <description>Simple 3D shelf - A simple 3d shelf with Blender and Babylonjs This is a simple 3d shelf, I use:
+ Blender: modeling and export model.
+ Babylonjs: import and show 3d model to web.
+  Live view      var canvas = document.getElementById(&#34;renderCanvas&#34;); var engine = null; var scene = null; var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true,{preserveDrawingBuffer: true, stencil: true }); }; var createScene = function() { var scene = new BABYLON.</description>
+    </item>
+    
+    <item>
       <title>Canvas</title>
       <link>https://phuctk93.github.io/projects/canvas/</link>
       <pubDate>Thu, 25 Jul 2019 10:23:54 +0700</pubDate>

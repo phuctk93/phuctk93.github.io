@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pwa on phuctk93 - Full stack Developer, Desiner for web, app and game.</title>
-    <link>https://phuctk93.github.io/tags/pwa/</link>
-    <description>Recent content in Pwa on phuctk93 - Full stack Developer, Desiner for web, app and game.</description>
+    <title>Blender on phuctk93 - Full stack Developer, Desiner for web, app and game.</title>
+    <link>https://phuctk93.github.io/tags/blender/</link>
+    <description>Recent content in Blender on phuctk93 - Full stack Developer, Desiner for web, app and game.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Jan 2020 01:31:49 +0700</lastBuildDate>
     
-	<atom:link href="https://phuctk93.github.io/tags/pwa/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phuctk93.github.io/tags/blender/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
  Blender: modeling and export model.
  Babylonjs: import and show 3d model to web.
   Live view      var canvas = document.getElementById(&#34;renderCanvas&#34;); var engine = null; var scene = null; var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true,{preserveDrawingBuffer: true, stencil: true }); }; var createScene = function() { var scene = new BABYLON.</description>
-    </item>
-    
-    <item>
-      <title>Canvas</title>
-      <link>https://phuctk93.github.io/projects/canvas/</link>
-      <pubDate>Thu, 25 Jul 2019 10:23:54 +0700</pubDate>
-      
-      <guid>https://phuctk93.github.io/projects/canvas/</guid>
-      <description> Canvas - Choise your canvas style This is a Propressive Web App - PWA to choice canvas. It&amp;rsquo;s fit to small print shop.
-My demo at: Canvas demo
- Build with Vue and Buefy CSS with Bulma  </description>
     </item>
     
   </channel>

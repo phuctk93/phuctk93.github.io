@@ -2,11 +2,11 @@
 <html lang="en-US"><head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Description" content='Canvas - A simple propressive web app to choice canvas for small store' />
+	<meta name="Description" content='A simple 3d shelf with Blender and Babylonjs' />
 	<meta name="author" content="phuctk93">
 	<link rel="icon" href="/img/logo_p.svg">
-	<link rel="canonical" href="https://phuctk93.github.io/projects/canvas/">
-	<title>phuctk93 | Canvas</title>
+	<link rel="canonical" href="https://phuctk93.github.io/projects/3d-shelf/">
+	<title>phuctk93 | Simple 3D Shelf</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	<script defer src="/js/bugger.js"></script>
@@ -48,31 +48,74 @@
 	<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/projects">projects</a></li>
-			<li class="is-active"><a href="https://phuctk93.github.io/projects/canvas/">canvas</a></li>
+			<li class="is-active"><a href="https://phuctk93.github.io/projects/3d-shelf/">simple 3d shelf</a></li>
 	</ul>
 </nav><div class="columns content is-multiline">
 		<div class="column is-12">
-				<h1>Canvas</h1>
+				<h1>Simple 3D Shelf</h1>
 				<div id="content">
 						
 
-<h1 id="canvas-choise-your-canvas-style">Canvas - Choise your canvas style</h1>
+<h1 id="simple-3d-shelf-a-simple-3d-shelf-with-blender-and-babylonjs">Simple 3D shelf - A simple 3d shelf with Blender and Babylonjs</h1>
 
-<p>This is a Propressive Web App - PWA to choice canvas. It&rsquo;s fit to small print shop.</p>
-
-<p>My demo at: <a href="https://canvas-3cbbd.web.app">Canvas demo</a></p>
+<p>This is a simple 3d shelf, I use:</p>
 
 <ul>
-<li>Build with <a href="https://vuejs.org/">Vue</a> and <a href="https://buefy.org">Buefy</a></li>
-<li>CSS with <a href="https://bulma.io">Bulma</a></li>
+<li><p><a href="https://www.blender.org/">Blender</a>: modeling and export model.</p></li>
+
+<li><p><a href="https://www.babylonjs.com/">Babylonjs</a>: import and show 3d model to web.</p></li>
 </ul>
 
-<p><img src="/img/projects/canvas-3cbbd.png" alt="Canvas demo preview" /></p>
+<h1 id="live-view">Live view</h1>
+
+<canvas id="renderCanvas" style="width: 100%;height: 100%;touch-action: none;"></canvas>
+
+<script src="https://code.jquery.com/pep/0.4.2/pep.min.js"></script>
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+<script>
+  var canvas = document.getElementById("renderCanvas");
+  var engine = null;
+  var scene = null;
+  var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true,{preserveDrawingBuffer: true, stencil: true }); };
+  var createScene = function() {
+    var scene = new BABYLON.Scene(engine);
+          // Append glTF model to scene.
+          BABYLON.SceneLoader.Append("/3d/", "ke_kl.glb", scene, function (scene) {
+              
+              // Create a default arc rotate camera and light.
+              scene.createDefaultCameraOrLight(true, true, true);
+              
+              // The default camera looks at the back of the asset.
+              var helper = scene.createDefaultEnvironment();
+              helper.setMainColor(BABYLON.Color3.White());
+              // Rotate the camera by 180 degrees to the front of the asset.
+              scene.activeCamera.alpha += Math.PI;
+          });
+          scene.createDefaultCamera()
+    return scene;
+  };
+  
+  
+  engine = createDefaultEngine();
+  if (!engine) throw 'engine should not be null.';
+  scene = createScene();
+  engine.runRenderLoop(function () {
+      if (scene) {
+          scene.render();
+      }
+  });
+  // Resize
+  window.addEventListener("resize", function () {
+      engine.resize();
+  });
+</script>
 
 				</div>
 		</div>
 		<div class="column is-12">
-			<b>Published date:</b> 25-07-2019
+			<b>Published date:</b> 05-01-2020
 		</div>
 		<div class="column is-12">
 			<b>Tags: </b>
@@ -82,7 +125,9 @@
 				
 					<a href="https://phuctk93.github.io/tags/pwa" class="tag is-info">pwa </a>
 				
-					<a href="https://phuctk93.github.io/tags/vuejs" class="tag is-info">vuejs </a>
+					<a href="https://phuctk93.github.io/tags/babylonjs" class="tag is-info">babylonjs </a>
+				
+					<a href="https://phuctk93.github.io/tags/blender" class="tag is-info">blender </a>
 				
 					<a href="https://phuctk93.github.io/tags/canvas" class="tag is-info">canvas </a>
 				
@@ -91,10 +136,8 @@
 	</div>
 	<nav class="pagination is-rounded" role="navigation" aria-label="pagination">
 		
-		<a href="https://phuctk93.github.io/projects/bushiroad/" class="pagination-previous" title="Bushiroad"><i class="fas fa-arrow-left"> </i> Bushiroad</a>
+		<a href="https://phuctk93.github.io/projects/canvas/" class="pagination-previous" title="Canvas"><i class="fas fa-arrow-left"> </i> Canvas</a>
 		
-		
-		<a href="https://phuctk93.github.io/projects/3d-shelf/" class="pagination-next" title="Simple 3D Shelf"> Simple 3D Shelf <i class="fas fa-arrow-right"> </i></a>
 		
 	</nav>
 </section>
